@@ -31,3 +31,12 @@ docker run -d \
 -e SPRING_PROFILES_ACTIVE=testdata \
 catalog-service
 ```
+
+```bash
+./gradlew bootBuildImage \
+--imageName ghcr.io/nightletter-cnsia/catalog-service \
+--publishImage \
+-PregistryUrl=ghcr.io \
+-PregistryUsername=nightletter \
+-PregistryToken=
+```
