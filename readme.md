@@ -40,3 +40,15 @@ catalog-service
 -PregistryUsername=nightletter \
 -PregistryToken=
 ```
+
+```bash
+./gradlew bootBuildImage --builder ghcr.io/thomasvitale/java-builder-arm64
+```
+
+```bash
+tilt up
+```
+
+```bash
+kubeconform -strict -summary [디렉터리]
+```
